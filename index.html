@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views, and they are tabs-->
+    <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+    <div class="views tabs toolbar-through">
+      <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+      <div id="view-1" class="view view-main tab active">
+	  
+	  <style>
+	  @font-face {
+
+		font-family: "Lobster"; 
+		src: url("fonts/Lobster.ttf") format("truetype"); 
+
+		}
+	   </style>
+	  
+	  
+        <!-- Pages-->
+        <div class="pages">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index-1" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block" style="margin-top:-10px;">
+					<div style="text-align:center;">
+						<img src="img/strongman.png" width="230">
+						<h2 style="font-family: 'Lobster', cursive; text-transform: capitalize; color: #2c3e50; font-size: 40px; margin-top:-20px;">Lifter</h2>     
+					</div>
+                <p>The app "Lifter" calculates an individual training program.</p>
+                <p>All metrics given on the basis of the most advanced methodological developments in the field of powerlifting and physiology.</p>
+                <p>The application used programs such eminent athletes and methodists as Ted Arcidi and Yuri Verkhoshansky.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second view (for second wrap)-->
+      <div id="view-2" class="view tab">
+        <!-- We can make with view with navigation, let's add Top Navbar-->
+        <div class="navbar" style="height:127px; background:white;">
+          <div class="navbar-inner" style="float:left;">
+			<div style="text-align: center; padding-left:30px;">
+				<img style="width:67px; height:67px;" src="img/benchpress-logo.svg"/>
+				<h2 style="margin:0; font-family: 'Lobster', cursive; text-transform: capitalize; color: #5f78a0; font-size: 22px;">BenchPress</h2>
+			</div>
+			<div style="width:240px;padding-right:20px;">
+				  <style type="text/css">
+				   .line { 
+					border-left: 1px solid #ccc; /* Параметры линии */ 
+					margin-left: 20px; /* Отступ слева */
+					padding-left: 10px; /* Расстояние от линии до текста */ 
+				   }
+				  </style> 
+				<p class="line" style="font-size:12px; color:#858383;">Exercise should be done up to 2 times a week. Before the exercise, perform a warm-up and the first approach should be with a blank fretboard to avoid injuries.</p>
+			</div>
+		  </div>
+        </div>
+        <div class="pages navbar-through">
+          <div data-page="index-2" class="page">
+            <div class="page-content" style="padding-top:127px;">
+              <div class="content-block" style="text-align:center;">
+				
+				   
+              </div>
+			  
+		<style>	  
+		select {
+  text-align: center;
+  text-align-last: center;
+  /* webkit*/
+}
+option {
+  text-align: left;
+  /* reset to left*/
+}
+		</style>		  
+			  
+<div class="list-block">
+<div class="content-block" style="text-align:center; margin-bottom:0;"><p>Enter the max weight you can push at <b>1 time.</b></p></div>
+  <ul>
+     <li>
+	   <div class="item-content">
+         <div class="item-inner">
+          <div class="item-input">
+              <select id="weigth">
+				<option>40</option><option>42,5</option><option>45</option><option>47,5</option><option>50</option><option>52,5</option><option>55</option><option>57,5</option><option>60</option><option>62,5</option><option>65</option><option>67,5</option><option>70</option><option>72,5</option><option>75</option><option>77,5</option><option>80</option><option>82,5</option><option>85</option><option>87,5</option><option>90</option><option>92,5</option><option>95</option><option>97,5</option><option>100</option><option>102,5</option><option>105</option><option>107,5</option><option>110</option><option>112,5</option><option>115</option><option>117,5</option><option>120</option><option>122,5</option><option>125</option><option>127,5</option><option>130</option><option>132,5</option><option>135</option><option>137,5</option><option>140</option><option>142,5</option><option>145</option><option>147,5</option><option>150</option><option>152,5</option><option>155</option><option>157,5</option><option>160</option><option>162,5</option><option>165</option><option>167,5</option><option>170</option><option>172,5</option><option>175</option><option>177,5</option><option>180</option>
+			  </select>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div> 
+
+<div class="list-block">
+<div class="content-block" style="text-align:center; margin-bottom:0;"><p style="margin-bottom:5px;">Enter the <b>number of days</b> per week that you can train this exercise.</p></div>
+  <ul>
+     <li>
+	   <div class="item-content">
+         <div class="item-inner">
+          <div class="item-input">
+              <select id="bench-days">
+				<option>1</option><option>2</option>
+			  </select>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
+</div>     
+  <div style="text-align:center;" onclick="benchpress()" ><a href="#" class="button button-fill" style="background: #5c7da2;">Calculate my programme</a></div>
+  <div id="benchpresscolumn" style="padding-top:20px;"></div>
+            </div>
+			   
+          </div>
+		       </div>
+			   
+			   
+      </div>
+	  
+	  
+	  
+	  
+	  
+      <div id="view-3" class="view tab">
+			
+        <!-- We can make with view with navigation, let's add Top Navbar-->
+            <div class="navbar" style="height:127px; background:white;">
+          <div class="navbar-inner" style="float:left;">
+			<div style="text-align: center; padding-left:30px;">
+				<img style="width:80px; height:70px; margin-bottom: -15px;" src="img/deafleafts.svg"/>
+				<h2 style="margin:0; font-family: 'Lobster', cursive; text-transform: capitalize; color: #5f78a0; font-size: 22px;">Deadlifts</h2>
+			</div>
+			<div style="width:240px;padding-right:20px;">
+				  <style type="text/css">
+				   .line { 
+					border-left: 1px solid #ccc; /* Параметры линии */ 
+					margin-left: 20px; /* Отступ слева */
+					padding-left: 10px; /* Расстояние от линии до текста */ 
+				   }
+				  </style> 
+				<p class="line" style="font-size:12px; color:#858383;">Exercise should be done up to 1 times a week to avoid back injuries. Before the exercise, perform a warm-up and the first approach should be with a blank fretboard.</p>
+			</div>
+		  </div>
+        </div>
+        <div class="pages navbar-through">
+          <div data-page="index-2" class="page">
+            <div class="page-content" style="padding-top:127px;">
+              <div class="content-block" style="text-align:center;">
+				
+				   
+              </div>
+			  
+			  
+			  
+			  
+			  
+			  
+<div class="list-block">
+<div class="content-block" style="text-align:center; margin-bottom:0;"><p>Enter the max weight you can pull at <b>1 time.</b></p></div>
+  <ul>
+     <li>
+	   <div class="item-content">
+         <div class="item-inner">
+          <div class="item-input">
+              <select id="weigthleafts">
+				<option>40</option><option>42,5</option><option>45</option><option>47,5</option><option>50</option><option>52,5</option><option>55</option><option>57,5</option><option>60</option><option>62,5</option><option>65</option><option>67,5</option><option>70</option><option>72,5</option><option>75</option><option>77,5</option><option>80</option><option>82,5</option><option>85</option><option>87,5</option><option>90</option><option>92,5</option><option>95</option><option>97,5</option><option>100</option><option>102,5</option><option>105</option><option>107,5</option><option>110</option><option>112,5</option><option>115</option><option>117,5</option><option>120</option><option>122,5</option><option>125</option><option>127,5</option><option>130</option><option>132,5</option><option>135</option><option>137,5</option><option>140</option><option>142,5</option><option>145</option><option>147,5</option><option>150</option><option>152,5</option><option>155</option><option>157,5</option><option>160</option><option>162,5</option><option>165</option><option>167,5</option><option>170</option><option>172,5</option><option>175</option><option>177,5</option><option>180</option>
+			  </select>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div> 
+
+<div class="list-block">
+<div class="content-block" style="text-align:center; margin-bottom:0;"><p style="margin-bottom:5px;">Enter the <b>number of days</b> per week that you can train this exercise.</p></div>
+  <ul>
+     <li>
+	   <div class="item-content">
+         <div class="item-inner">
+          <div class="item-input">
+              <select>
+				<option>1</option>
+			  </select>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
+</div>     
+  <div style="text-align:center;"><a href="#" onclick="deadleafts()" class="button button-fill" style="background: #5c7da2;">Calculate my programme</a></div>
+  <div id="deadleaftscolumn" style="padding-top:20px;"></div>
+            </div>
+			   
+          </div>
+		
+        </div>
+      
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  
+      <div id="view-4" class="view tab">
+        <!-- We can make with view with navigation, let's add Top Navbar-->
+ 
+          <div class="navbar" style="height:127px; background:white;">
+          <div class="navbar-inner" style="float:left;">
+			<div style="text-align: center; padding-left:30px;">
+				<img style="width:80px; height:70px; margin-bottom: -15px;" src="img/squats.svg"/>
+				<h2 style="margin:0; font-family: 'Lobster', cursive; text-transform: capitalize; color: #5f78a0; font-size: 22px;">Squats</h2>
+			</div>
+			<div style="width:240px;padding-right:20px;">
+				  <style type="text/css">
+				   .line { 
+					border-left: 1px solid #ccc; /* Параметры линии */ 
+					margin-left: 20px; /* Отступ слева */
+					padding-left: 10px; /* Расстояние от линии до текста */ 
+				   }
+				  </style> 
+				<p class="line" style="font-size:12px; color:#858383;">Exercise should be done up to 2 times a week to avoid back injuries and knee. Before the exercise, perform a warm-up and the first approach should be with a blank fretboard.</p>
+			</div>
+		  </div>
+        </div>
+ 
+ 
+ 
+ 
+ 
+        <div class="pages navbar-through">
+          <div data-page="index-2" class="page">
+            <div class="page-content" style="padding-top:127px;">
+              <div class="content-block" style="text-align:center;">
+				
+				   
+              </div>
+			  
+			  
+			  
+			  
+			  
+			  
+<div class="list-block">
+<div class="content-block" style="text-align:center; margin-bottom:0;"><p>Enter the max weight you can squat at <b>1 time.</b></p></div>
+  <ul>
+     <li>
+	   <div class="item-content">
+         <div class="item-inner">
+          <div class="item-input">
+              <select id="weigthsquats">
+				<option>40</option><option>42,5</option><option>45</option><option>47,5</option><option>50</option><option>52,5</option><option>55</option><option>57,5</option><option>60</option><option>62,5</option><option>65</option><option>67,5</option><option>70</option><option>72,5</option><option>75</option><option>77,5</option><option>80</option><option>82,5</option><option>85</option><option>87,5</option><option>90</option><option>92,5</option><option>95</option><option>97,5</option><option>100</option><option>102,5</option><option>105</option><option>107,5</option><option>110</option><option>112,5</option><option>115</option><option>117,5</option><option>120</option><option>122,5</option><option>125</option><option>127,5</option><option>130</option><option>132,5</option><option>135</option><option>137,5</option><option>140</option><option>142,5</option><option>145</option><option>147,5</option><option>150</option><option>152,5</option><option>155</option><option>157,5</option><option>160</option><option>162,5</option><option>165</option><option>167,5</option><option>170</option><option>172,5</option><option>175</option><option>177,5</option><option>180</option>
+			  </select>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div> 
+
+<div class="list-block">
+<div class="content-block" style="text-align:center; margin-bottom:0;"><p style="margin-bottom:5px;">Enter the <b>number of days</b> per week that you can train this exercise.</p></div>
+  <ul>
+     <li>
+	   <div class="item-content">
+         <div class="item-inner">
+          <div class="item-input">
+              <select id="days-squats">
+				<option>1</option><option>2</option>
+			  </select>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
+</div>     
+  <div style="text-align:center;"><a href="#" onclick="squats()" class="button button-fill" style="background: #5c7da2;">Calculate my programme</a></div>
+  <div id="squatscolumn"></div>
+            </div>
+			   
+          </div>
+		
+        </div>
+      </div>
+	  
+	  <style>
+		.icon{
+			width:30px;
+			height: 30px;
+			}
+	
+		.tabbar-label{
+			color: #5c7da2;
+		}
+		
+	  </style>
+
+	  
+	  
+      <!-- Bottom Tabbar-->
+      <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner"><a href="#view-1" class="tab-link active" id="view0"> <i class="icon tabbar-demo-icon-1"></i><span class="tabbar-label">Information</span></a><a href="#view-2" class="tab-link" id="view1"><img class="icon" src="img/benchpress.svg"/><span class="tabbar-label">Bench press</span></a><a href="#view-3" class="tab-link" id="view2"><img class="icon" id="deafleafts" src="img/deafleafts.svg"/><span class="tabbar-label">Deadlifts</span></a><a href="#view-4" class="tab-link" id="view3"> <img class="icon" src="img/squats.svg"/><span class="tabbar-label">Squats</span></a></div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+	
+		<script>
+		
+			$( "#view0" ).click(function() {
+			 $('#view1 img').attr('src', 'img/benchpress.svg');
+			 $('#view2 img').attr('src', 'img/deafleafts.svg');
+			 $('#view3 img').attr('src', 'img/squats.svg');
+			});
+				
+			
+			$( "#view1" ).click(function() {
+			 $('#view1 img').attr('src', 'img/benchpress-blue.svg');
+			 $('#view2 img').attr('src', 'img/deafleafts.svg');
+			 $('#view3 img').attr('src', 'img/squats.svg');
+			});
+						
+			$( "#view2" ).click(function() {
+			 $('#view2 img').attr('src', 'img/deafleafts-blue.svg');
+			 $('#view1 img').attr('src', 'img/benchpress.svg');
+			 $('#view3 img').attr('src', 'img/squats.svg');
+			});
+						
+			$( "#view3" ).click(function() {
+			 $('#view3 img').attr('src', 'img/squats-blue.svg');
+			 $('#view1 img').attr('src', 'img/benchpress.svg');
+			 $('#view2 img').attr('src', 'img/deafleafts.svg');
+			});
+			
+			
+			
+		
+	  </script>
+	    <script src="js/calculator-bench-press.js"></script>
+    <script src="js/calculator-dead-leafts.js"></script>
+    <script src="js/calculator-squats.js"></script>
+	
+	
+	
+	
+  </body>
+</html>
